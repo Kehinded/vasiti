@@ -14,7 +14,7 @@ font-family: 'Roboto', sans-serif; */
 :root {
   --white-color: #ffffff;
   --border-color: #eaeaea;
-  --background-color: #e5e5e5;
+  --background-color: #ffffff;
   --orange-button-color: #ff5c00;
   --blue-button-color: #0d019a;
   --green-button-color: #049a01;
@@ -48,6 +48,7 @@ body {
 #root {
   grid-column: full-start / full-end;
   overflow-x: hidden;
+  background-color: var(--background-color);
 }
 
 @media only screen and (max-width: 75em) {

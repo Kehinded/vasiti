@@ -1,0 +1,110 @@
+.header-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: var(--nav-font);
+  color: #000000;
+}
+.header-section .underline-box {
+  border-bottom: 0.1rem solid var(--border-color);
+  width: 100%;
+}
+.header-section .header-nav-box {
+  width: 80%;
+  margin: 0rem auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.header-section .header-nav-box .box-1 {
+  flex: 0 0 20%;
+}
+.header-section .header-nav-box .box-two {
+  margin-left: auto;
+}
+.header-section .header-nav-box .box-two .list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.header-section .header-nav-box .box-two .list > *:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.header-section .header-nav-box .box-two .list .item {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header-section .header-nav-box .box-two .list .item:last-child {
+  background-color: var(--orange-button-color);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.4rem;
+  display: grid;
+  place-items: center;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.header-section .header-nav-box-two {
+  width: 100%;
+  margin: 0rem auto;
+  padding: 2rem 1rem;
+}
+.header-section .header-nav-box-two .list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+.header-section .header-nav-box-two .list > *:not(:last-child) {
+  margin-right: 4rem;
+}
+.header-section .header-nav-box-two .list .item {
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header-section .main-content {
+  width: 80%;
+  margin: 3rem auto 0rem auto;
+  display: flex;
+  padding: 2rem 0rem;
+}
+.header-section .main-content .text-box {
+  flex: 0 0 50%;
+  display: grid;
+  place-items: center;
+}
+.header-section .main-content .text-box h3 {
+  font-size: 3.5vw;
+}
+.header-section .main-content .text-box .text {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  width: 80%;
+}
+.header-section .main-content .right-box {
+  flex: 1;
+  background-image: url("../assets/Subtractround-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.other-box {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.other-box .img-box {
+  width: 80%;
+  height: 40rem;
+}
+.other-box .img-box .img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}/*# sourceMappingURL=Header.css.map */

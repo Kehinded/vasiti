@@ -1,0 +1,25 @@
+.stories-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .customer-box{
+        background-color: #222222;
+        .main-box{
+         display: flex;
+         
+         .left-box{
+             flex: 0 0 50%;
+    background-image: url("../assets/round-bg-customer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+         }
+
+         .right-box{
+             flex: 1;
+             color: var(--white-color);
+         }
+        }
+    }
+}

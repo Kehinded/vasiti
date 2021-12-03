@@ -3,7 +3,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--background-color);
   /* display: grid;
    grid-template-columns: [full-start] minmax(10rem, 1fr) [col-start] repeat(8, minmax(min-content, 16rem)) [col-end] minmax(10rem, 1fr) [full-end]; */
-  /* grid-template-rows: min-content ; */
+  /* grid-template-rows: min-content ;  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 */
 }
