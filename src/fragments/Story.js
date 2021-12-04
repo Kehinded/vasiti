@@ -9,7 +9,7 @@ const Story = ({ Img, name, location, role, text }) => {
       </figure>
       <div className="name">{name || "john smith"}</div>
       <div className="location-role-box">
-        <div className="location">{location || "in lagos"}</div>
+        {location && <div className="location">{location || "in lagos"}</div>}
         <div className={`role ${role.toLowerCase()}`}>
           <span>{role || "vendor"}</span>
         </div>

@@ -1,0 +1,144 @@
+.form {
+  padding: 5rem 2rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35rem;
+}
+
+.form .title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+
+.form .form-group .label {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.form .form-group .input {
+  border: 0.1rem solid var(--border-color);
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+}
+
+.form .form-group .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.3rem;
+  border: 0.1rem solid var(--border-color);
+}
+
+.form .form-group .input-group .input {
+  border: none !important;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+}
+
+.form .form-group .input-group .logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.form .form-group .text {
+  color: red;
+  text-transform: capitalize;
+}
+
+.form .check-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .check-group .label {
+  font-size: 1.2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.form .check-group .radio-box {
+  margin-left: 0.7rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .check-group .radio-box > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .check-group .radio-box > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.form .check-group .radio-box > * label {
+  font-size: 1.2rem;
+}
+
+.form .submit {
+  color: var(--white-color);
+  align-self: flex-end;
+  background-color: var(--orange-button-color);
+  padding: 0.8rem 1.2rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 0.4rem;
+}
+
+.form .submit:hover {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+}
+/*# sourceMappingURL=Form.css.map */

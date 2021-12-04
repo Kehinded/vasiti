@@ -111,7 +111,7 @@
 .stories-section .stories-box {
   min-height: 40rem;
   width: 100%;
-  padding: 3rem 0rem;
+  padding: 8rem 0rem;
 }
 
 .stories-section .stories-box .story-box {
@@ -137,6 +137,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
 }
 
 .stories-section .stories-box .story-box .story .img-box {
@@ -229,7 +231,7 @@
 .stories-section .customer-two .main-box {
   width: 80%;
   margin: 0rem auto;
-  padding: 3rem 0rem;
+  padding: 3rem 0rem 0rem 0rem;
 }
 
 .stories-section .customer-two .main-box .right-box {
@@ -239,6 +241,7 @@
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   background-image: url("../assets/round-orange-bg.png");
+  background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60%;
@@ -285,7 +288,6 @@
   width: 60%;
   font-size: 1.4rem;
   line-height: 2.3rem;
-  color: #ff5c00;
 }
 
 .stories-section .customer-two .main-box .left-box .main-text-box .share-box {
@@ -313,6 +315,7 @@
   width: 100%;
   word-spacing: 0.5rem;
   text-transform: uppercase;
+  color: #ff5c00;
 }
 
 .stories-section .customer-two .main-box .left-box .main-text-box .share-box .img {

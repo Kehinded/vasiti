@@ -85,7 +85,7 @@
   .stories-box {
     min-height: 40rem;
     width: 100%;
-    padding: 3rem 0rem;
+    padding: 8rem 0rem;
     // position: relative;
     // z-index: 10;
 
@@ -105,6 +105,7 @@
         // justify-self: center;
         display: flex;
         flex-direction: column;
+        transform: translateX(15%);
 
         .img-box {
           height: 15rem;
@@ -195,12 +196,13 @@
     .main-box {
       width: 80%;
       margin: 0rem auto;
-      padding: 3rem 0rem;
+      padding: 3rem 0rem 0rem 0rem;
       .right-box {
         padding: 5rem 0rem 0rem 0rem;
         margin-top: 3rem;
         flex: 0 0 50%;
         background-image: url("../assets/round-orange-bg.png");
+        background-blend-mode: darken;
         background-position: center;
         background-repeat: no-repeat;
         // background-size: contain;
@@ -238,7 +240,6 @@
             width: 60%;
             font-size: 1.4rem;
             line-height: 2.3rem;
-            color: #ff5c00;
           }
 
           .share-box {
@@ -257,6 +258,7 @@
               width: 100%;
               word-spacing: 0.5rem;
               text-transform: uppercase;
+              color: #ff5c00;
             }
 
             .img {
@@ -269,3 +271,9 @@
     }
   }
 }
+
+// .section-up {
+//   position: relative;
+//   z-index: 20;
+//   margin-top: -3rem;
+// }

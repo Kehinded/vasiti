@@ -17,7 +17,7 @@ const MainStory = ({ switchChange }) => {
           />
         </div>
         <div className="right-box">
-          <ImageBox image={ShoppingImg} />
+          <ImageBox translate="1.8rem" image={ShoppingImg} />
         </div>
       </div>
     );
