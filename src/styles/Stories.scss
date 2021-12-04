@@ -1,25 +1,271 @@
-.stories-section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.stories-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-    .customer-box{
-        background-color: #222222;
-        .main-box{
-         display: flex;
-         
-         .left-box{
-             flex: 0 0 50%;
-    background-image: url("../assets/round-bg-customer.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-         }
+  .customer-box {
+    background-color: #222222;
+    margin-top: -2.4rem;
 
-         .right-box{
-             flex: 1;
-             color: var(--white-color);
-         }
+    .main-box {
+      display: flex;
+      align-items: center;
+      padding-top: 2rem;
+      //   margin-bottom: -0.2rem;
+
+      .left-box {
+        padding: 5rem 0rem 0rem 0rem;
+        margin-top: 3rem;
+        flex: 0 0 50%;
+        background-image: url("../assets/round-bg-customer.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        // background-size: contain;
+        background-size: 60%;
+      }
+
+      .right-box {
+        flex: 1;
+        color: var(--white-color);
+
+        .main-text-box {
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            word-spacing: 0.4rem;
+          }
+
+          .role {
+            font-size: 1.3rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            align-self: flex-start;
+            margin-bottom: 3rem;
+            border-radius: 0.5rem;
+          }
+
+          .text {
+            width: 60%;
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+          }
+
+          .share-box {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+              transform: translateY(-0.1rem);
+            }
+
+            .text {
+              width: 100%;
+              word-spacing: 0.5rem;
+              text-transform: uppercase;
+            }
+
+            .img {
+              margin-top: -1rem;
+              width: 20rem;
+            }
+          }
         }
+      }
     }
+  }
+
+  .stories-box {
+    min-height: 40rem;
+    width: 100%;
+    padding: 3rem 0rem;
+    // position: relative;
+    // z-index: 10;
+
+    .story-box {
+      width: 80%;
+      margin: 0rem auto;
+      //   background-color: red;
+      height: 100%;
+      display: grid;
+      //   background-color: red;
+      grid-template-columns: repeat(auto-fit, minmax(19rem, calc((100% / 3))));
+      grid-row-gap: 5rem;
+      justify-content: center;
+      padding: 3rem 0rem;
+
+      .story {
+        // justify-self: center;
+        display: flex;
+        flex-direction: column;
+
+        .img-box {
+          height: 15rem;
+          width: 15rem;
+          border-radius: 50%;
+          margin-bottom: 2rem;
+
+          .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+          }
+        }
+
+        .name {
+          font-weight: bold;
+          text-transform: capitalize;
+          font-size: 1.8rem;
+          margin: 1rem 0rem;
+        }
+
+        .location-role-box {
+          display: flex;
+          margin: 1rem 0rem;
+          align-items: center;
+
+          .location {
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            margin-right: 1.5rem;
+          }
+
+          .role {
+            position: relative;
+            padding: 0.4rem 1.2rem;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              background-color: var(--blue-button-color);
+              z-index: 1;
+              opacity: 0.1;
+              border-radius: 0.3rem;
+            }
+
+            span {
+              color: var(--blue-button-color);
+              font-weight: bold;
+              position: relative;
+              z-index: 3;
+              text-transform: uppercase;
+              font-size: 1.3rem;
+            }
+          }
+
+          .vendor {
+            &::after {
+              content: "";
+              background-color: var(--green-button-color);
+            }
+
+            span {
+              color: var(--green-button-color);
+            }
+          }
+        }
+
+        .text {
+          width: 70%;
+          font-size: 1.3rem;
+          line-height: 2rem;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .customer-two {
+    background-color: #fff8f5;
+    position: relative;
+
+    .main-box {
+      width: 80%;
+      margin: 0rem auto;
+      padding: 3rem 0rem;
+      .right-box {
+        padding: 5rem 0rem 0rem 0rem;
+        margin-top: 3rem;
+        flex: 0 0 50%;
+        background-image: url("../assets/round-orange-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        // background-size: contain;
+        background-size: 60%;
+      }
+
+      .left-box {
+        flex: 0 0 50%;
+        color: var(--dark-color);
+        background-image: unset;
+
+        .main-text-box {
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            word-spacing: 0.4rem;
+          }
+
+          .role {
+            font-size: 1.3rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(#ff5c00, 0.3);
+            align-self: flex-start;
+            margin-bottom: 3rem;
+            border-radius: 0.5rem;
+            color: #ff5c00;
+            font-weight: bold;
+          }
+
+          .text {
+            width: 60%;
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+            color: #ff5c00;
+          }
+
+          .share-box {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+              transform: translateY(-0.1rem);
+            }
+
+            .text {
+              width: 100%;
+              word-spacing: 0.5rem;
+              text-transform: uppercase;
+            }
+
+            .img {
+              margin-top: -1rem;
+              width: 20rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
