@@ -13,6 +13,12 @@
       padding-top: 2rem;
       //   margin-bottom: -0.2rem;
 
+      @media only screen and (max-width: 47em){
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 3rem;
+    }
+
       .left-box {
         padding: 5rem 0rem 0rem 0rem;
         margin-top: 3rem;
@@ -22,15 +28,30 @@
         background-repeat: no-repeat;
         // background-size: contain;
         background-size: 60%;
+
+        @media only screen and (max-width: 47em){
+     background-size: 80%; 
+    margin-bottom: 3rem;
+    }
       }
 
       .right-box {
         flex: 1;
         color: var(--white-color);
 
+        @media only screen and (max-width: 47em){
+    //  align-self: center; 
+    //  background-color: red;
+    }
+
         .main-text-box {
+          width: 100%;
           display: flex;
           flex-direction: column;
+
+          @media only screen and (max-width: 47em){
+     align-items: center; 
+    }
 
           .title {
             font-size: 2.5rem;
@@ -46,6 +67,11 @@
             align-self: flex-start;
             margin-bottom: 3rem;
             border-radius: 0.5rem;
+
+            @media only screen and (max-width: 47em){
+              margin-top: 1rem;
+     align-self: center; 
+    }
           }
 
           .text {
@@ -61,6 +87,10 @@
             align-self: flex-start;
             cursor: pointer;
             transition: all 0.3s;
+
+            @media only screen and (max-width: 47em){
+     align-self: center; 
+    }
 
             &:hover {
               transform: translateY(-0.1rem);
@@ -96,10 +126,14 @@
       height: 100%;
       display: grid;
       //   background-color: red;
-      grid-template-columns: repeat(auto-fit, minmax(19rem, calc((100% / 3))));
+      grid-template-columns: repeat(auto-fit, minmax(24rem, calc((100% / 3))));
       grid-row-gap: 5rem;
       justify-content: center;
       padding: 3rem 0rem;
+
+      @media only screen and (max-width: 47em){
+     width: 90%; 
+    }
 
       .story {
         // justify-self: center;
@@ -107,11 +141,20 @@
         flex-direction: column;
         transform: translateX(15%);
 
+          @media only screen and (max-width: 36em){
+     transform: translateX(10%)
+    }
+
         .img-box {
           height: 15rem;
           width: 15rem;
           border-radius: 50%;
           margin-bottom: 2rem;
+
+          @media only screen and (max-width: 47em){
+     width: 12rem;
+     height: 12rem; 
+    }
 
           .img {
             width: 100%;
@@ -127,6 +170,10 @@
           text-transform: capitalize;
           font-size: 1.8rem;
           margin: 1rem 0rem;
+
+          @media only screen and (max-width: 47em){
+     font-size: 1.6rem; 
+    }
         }
 
         .location-role-box {
@@ -184,6 +231,11 @@
           font-size: 1.3rem;
           line-height: 2rem;
           margin-top: 2rem;
+
+          @media only screen and (max-width: 47em){
+     line-height:unset;
+     width: 90%; 
+    }
         }
       }
     }
@@ -207,6 +259,11 @@
         background-repeat: no-repeat;
         // background-size: contain;
         background-size: 60%;
+
+         @media only screen and (max-width: 47em){
+    //  flex:
+    padding-top: 1rem; 
+    }
       }
 
       .left-box {
@@ -217,6 +274,10 @@
         .main-text-box {
           display: flex;
           flex-direction: column;
+
+          @media only screen and (max-width: 47em){
+     align-items: center; 
+    }
 
           .title {
             font-size: 2.5rem;
@@ -234,6 +295,11 @@
             border-radius: 0.5rem;
             color: #ff5c00;
             font-weight: bold;
+
+            @media only screen and (max-width: 47em){
+     align-self: center; 
+     margin-top: 1rem;
+    }
           }
 
           .text {
@@ -249,6 +315,10 @@
             align-self: flex-start;
             cursor: pointer;
             transition: all 0.3s;
+
+            @media only screen and (max-width: 47em){
+     align-self: center; 
+    }
 
             &:hover {
               transform: translateY(-0.1rem);

@@ -4,12 +4,9 @@ import FootterImg from "../assets/footer-img.png";
 import FooterText from "../assets/footer-text.png";
 import ListItem from "../fragments/ListItem";
 import {
-  FaFacebook,
   FaInstagram,
   FaTwitter,
-  FaLinkedin,
   FaFacebookF,
-  FaInstagramSquare,
   FaLinkedinIn,
 } from "react-icons/fa";
 
@@ -44,7 +41,7 @@ const Footer = () => {
     "Help/FAQs",
   ];
   return (
-    <div className="footer">
+    <div className="footer" id="contact-section">
       <div className="box-1">
         <figure className="img-box">
           <img src={FootterImg} alt="" className="img" />

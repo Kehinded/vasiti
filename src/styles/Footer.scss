@@ -12,12 +12,21 @@
     display: flex;
     align-items: center;
 
+    @media only screen and (max-width: 47em){
+     flex-direction: column; 
+    }
+
     .img-box {
       flex: 0 0 50%;
       width: 35rem;
       height: 35rem;
       position: relative;
       z-index: 50;
+
+      @media only screen and (max-width: 47em){
+    //  flex: 0 0 100%; 
+    width: 90%;
+    }
 
       .img {
         transform: translateY(-15%);
@@ -33,6 +42,11 @@
       color: var(--white-color);
       display: flex;
       flex-direction: column;
+
+        @media only screen and (max-width: 47em){
+    //  flex: 0 0 100%; 
+    width: 100%;
+    }
 
       .title {
         width: 30rem;
@@ -85,6 +99,12 @@
     grid-gap: 3rem;
     justify-content: center;
 
+     @media only screen and (max-width: 47em){
+    //  flex: 0 0 100%; 
+    padding-top: 3rem;
+    width: 90%;
+    }
+
     .box {
       padding: 1rem;
 
@@ -92,6 +112,10 @@
         display: flex;
         flex-direction: column;
         list-style: none;
+
+          @media only screen and (max-width: 47em){
+     align-items: center;
+    }
 
         .item {
           color: var(--white-color);
@@ -115,12 +139,21 @@
         color: var(--white-color);
         text-transform: capitalize;
         font-size: 1.3rem;
+          @media only screen and (max-width: 36em){
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
       }
 
       .icon-box {
         margin: 1rem 0rem 2rem 0rem;
         display: flex;
         align-items: center;
+          @media only screen and (max-width: 36em){
+      width: 90%;
+      transform: translateX(30%);
+    }
 
         .icon {
           width: 3rem;
@@ -141,6 +174,12 @@
         font-size: 1.3rem;
         margin-bottom: 1rem;
         opacity: 0.7;
+        
+          @media only screen and (max-width: 36em){
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
       }
     }
   }

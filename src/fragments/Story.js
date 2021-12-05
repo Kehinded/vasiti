@@ -1,11 +1,11 @@
 import React from "react";
-import UserImg from "../assets/userone.jpg";
+// import UserImg from "../assets/userone.jpg";
 
 const Story = ({ Img, name, location, role, text }) => {
   return (
     <div className="story">
       <figure className="img-box">
-        <img src={Img || UserImg} alt="" className="img" />
+        <img src={Img || `${Img["imagePreviewUrl"]}`} alt="" className="img" />
       </figure>
       <div className="name">{name || "john smith"}</div>
       <div className="location-role-box">

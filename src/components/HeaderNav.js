@@ -10,11 +10,17 @@ const HeaderNav = () => {
       </div>
       <div className="box-two">
         <ul className="list">
-         <Link className="item">about us</Link>
-         <Link className="item">stories</Link>
-         <Link className="item">contact</Link>
-         <Link className="item">login</Link>
-         <Link className="item">sign up</Link>
+          <Link to="about-section" spy={true} smooth={true} className="item">
+            about us
+          </Link>
+          <Link to="stories-section" spy={true} smooth={true} className="item">
+            stories
+          </Link>
+          <Link to="contact-section" spy={true} smooth={true} className="item">
+            contact
+          </Link>
+          <Link to="" className="item">login</Link>
+          <Link to="" className="item">sign up</Link>
         </ul>
       </div>
     </div>

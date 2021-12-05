@@ -8,3 +8,38 @@
    grid-template-columns: [full-start] minmax(10rem, 1fr) [col-start] repeat(8, minmax(min-content, 16rem)) [col-end] minmax(10rem, 1fr) [full-end]; */
   /* grid-template-rows: min-content ;  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 */
 }
+
+
+.success-box{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  width: 30rem;
+}
+
+.success-box .img-box{
+  margin-bottom: 2rem;
+}
+
+.success-box .big-text{
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success-box .text{
+  font-size: 1.3rem;
+  margin: 1.5rem 0rem;
+}
+
+.success-box .btn{
+  background-color: var(--orange-button-color);
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: var(--white-color);
+  display: grid;
+  place-items: center;
+  border-radius: .4rem;
+}

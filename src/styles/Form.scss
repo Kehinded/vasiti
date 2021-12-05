@@ -1,11 +1,16 @@
 .form {
   padding: 5rem 2rem 2rem 2rem;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   width: 35rem;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 3rem));
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 3rem;
 
   .title {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: bold;
   }
@@ -13,7 +18,7 @@
   .form-group {
     display: flex;
     flex-direction: column;
-    height: 7rem;
+    min-height: 7rem;
     margin-bottom: 1rem;
 
     .label {
@@ -26,19 +31,59 @@
       border: 0.1rem solid var(--border-color);
       padding: 0.7rem;
       border-radius: 0.3rem;
+      position: relative;
+
+       &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      &:focus{
+        // border: none;  
+        outline: none;
+      }
+
+      &:focus &::after{
+          border: .1rem solid var(--orange-button-color);
+        }
     }
 
     .input-group {
       display: flex;
       align-items: center;
       border-radius: 0.3rem;
+      // width: calc(50% - 3rem);
       border: 0.1rem solid var(--border-color);
-      //   padding: 0.6rem;
+
 
       .input {
-        border: none !important;
+        // border: none !important;
         flex: 0 0 90%;
+      position: relative;
+
+        &:focus{
+          border: none;
+        outline: none;
+        }
+
+        &:focus &::after{
+          border: .1rem solid var(--orange-button-color) !important;
+        }
+
+         &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
       }
+      }
+      
       .logo {
         flex: 0 0 10%;
         width: 2rem;
@@ -52,11 +97,14 @@
     }
   }
 
+
+
   .check-group {
     display: flex;
     flex-wrap: wrap;
     height: 7rem;
     align-items: center;
+    margin-bottom: 1rem;
 
     .label {
       font-size: 1.2rem;
@@ -81,15 +129,22 @@
 
         label {
           font-size: 1.2rem;
+          margin-left: .5rem;
         }
       }
+    }
+
+    
+    .text {
+      color: red;
+      text-transform: capitalize;
+      flex: 0 0 100%;
     }
   }
 
   .submit {
     color: var(--white-color);
-    // font-weight: bold;
-    align-self: flex-end;
+    justify-self: flex-end;
     background-color: var(--orange-button-color);
     padding: 0.8rem 1.2rem;
     display: grid;
@@ -103,5 +158,9 @@
     &:hover {
       transform: translateY(-0.1rem);
     }
+  }
+
+  .big{
+    grid-column: 1 / -1;
   }
 }

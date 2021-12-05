@@ -6,7 +6,7 @@ import HeaderNarTwo from "../components/HeaderNarTwo";
 
 const HeaderSection = () => {
   return (
-    <div className="header-section">
+    <div className="header-section" id="about-section">
       <HeaderNav />
       <div className="underline-box"></div>
       <HeaderNarTwo />

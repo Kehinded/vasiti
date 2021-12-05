@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import ImageBox from "../fragments/ImageBox";
+import VasitiContext from "../store/Context";
 import MainInfoBox from "../fragments/MainInfoBox";
 import CusImg from "../assets/customer-img-bg.png";
 import ShoppingImg from "../assets/shopping-img-lady.png";
 
 const MainStory = ({ switchChange }) => {
+  const vasitiCtx = useContext(VasitiContext)
   if (switchChange) {
     return (
       <div className="main-box">
@@ -14,6 +16,7 @@ const MainStory = ({ switchChange }) => {
             role="vendor"
             text="I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!"
             shareText="Share your own story!"
+            onShowModal={() => vasitiCtx.setShowModalFunc("vendor")}
           />
         </div>
         <div className="right-box">
@@ -33,6 +36,7 @@ const MainStory = ({ switchChange }) => {
           role="CUSTOMER"
           text="I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!"
           shareText="Share your own story!"
+          onShowModal={() => vasitiCtx.setShowModalFunc("customer")}
         />
       </div>
     </div>

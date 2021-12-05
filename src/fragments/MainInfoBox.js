@@ -1,7 +1,7 @@
 import React from "react";
 import UnderlineImg from "../assets/underlinebg.png";
 
-const MainInfoBox = ({ colorText, title, role, text, shareText }) => {
+const MainInfoBox = ({ colorText, title, role, text, shareText, onShowModal }) => {
   return (
     <div className={`main-text-box ${colorText}`}>
       <div className="title">{title || "Tolu & Joy’s Experience"}</div>
@@ -10,7 +10,7 @@ const MainInfoBox = ({ colorText, title, role, text, shareText }) => {
         {text ||
           "I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great"}
       </div>
-      <div className="share-box">
+      <div className="share-box" onClick={onShowModal}>
         <p className="text">{shareText || "Share your own story!"}</p>
         <img src={UnderlineImg} alt="" className="img" />
       </div>

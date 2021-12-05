@@ -4,12 +4,12 @@ import VasitiContext from "../store/Context";
 import Story from "../fragments/Story";
 import StoryBox from "../fragments/StoryBox";
 import "../styles/Stories.css";
-import { defaultUserOne, defaultusersTwo } from "../store/defaultUser";
+// import { defaultUserOne, defaultusersTwo } from "../store/defaultUser";
 
 const StoriesSection = () => {
   const vasitiCtx = useContext(VasitiContext);
   return (
-    <div className="stories-section">
+    <div className="stories-section" id="stories-section">
       <div className="customer-box">
         <MainStory />
       </div>
