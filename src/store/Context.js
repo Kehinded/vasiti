@@ -92,7 +92,7 @@ export function VasitiContextProvider(props) {
  async function addNewObject (param){
     let res;
     if(showModalvalue.customer){
-        const newObj = [...customerListVal, param];
+        const newObj = [param , ...customerListVal];
       setShowModalvalue((prev) => {
         return {...prev, loading: true}
       })
@@ -114,7 +114,7 @@ export function VasitiContextProvider(props) {
     }
      if (showModalvalue.vendor) {
       //  console.log("ok");
-        const newObj = [...vendorListVal, param];
+        const newObj = [param, ...vendorListVal];
         setShowModalvalue((prev) => {
           return { ...prev, loading: true };
         });
