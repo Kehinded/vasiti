@@ -5,13 +5,24 @@
   font-family: var(--nav-font);
   color: #000000;
   min-height: 93vh;
+  
 
   .underline-box {
     border-bottom: 0.1rem solid var(--border-color);
     width: 100%;
   }
 
-  .header-nav-box {
+  .header-nav-box{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0rem .2rem  .2rem rgba(0,0,0, .15);
+    z-index: 2000;
+    background-color: var(--white-color);
+  }
+
+  .header-nav-box-wrap {
     width: 80%;
     margin: 0rem auto;
     padding: 1.5rem 1rem;
@@ -65,7 +76,7 @@
 
   .header-nav-box-two {
     width: 100%;
-    margin: 0rem auto;
+    margin: 8rem auto 0rem auto;   
     padding: 2rem 1rem;
     box-shadow: 0rem .2rem  .2rem rgba(0,0,0, .15);
 

@@ -5,7 +5,8 @@ import {Link} from "react-scroll"
 const HeaderNav = () => {
   return (
     <div className="header-nav-box">
-      <div className="box-one">
+     <div className="header-nav-box-wrap">
+        <div className="box-one">
         <img src={ImageLogo} alt="" className="img" />
       </div>
       <div className="box-two">
@@ -23,6 +24,7 @@ const HeaderNav = () => {
           <Link to="" className="item">sign up</Link>
         </ul>
       </div>
+     </div>
     </div>
   );
 };
